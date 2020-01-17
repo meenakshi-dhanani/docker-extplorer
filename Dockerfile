@@ -51,12 +51,12 @@ ADD extplorer.site /etc/nginx/sites-enabled/extplorer.site
 RUN mkdir -p /var/www/eXtplorer/
 #RUN wget -qO /var/www/extplorer.zip "http://extplorer.net/attachments/download/57/eXtplorer_2.1.7.zip"
 #RUN unzip /var/www/extplorer.zip -d  /var/www/eXtplorer/
-ADD astrodata /var/www/astrodata
+ADD GMRTDataArchive /var/www/GMRTDataArchive
 ADD extplorer /var/www/eXtplorer
 #RUN unzip /home/eXtplorer_2.1.9.zip -d /var/www/eXtplorer/
 RUN chown -R www-data:www-data /var/www/eXtplorer
 RUN ln -s /var/www/eXtplorer /var/www/wfm
-RUN chown -R www-data:www-data /var/www/astrodata
+RUN chown -R www-data:www-data /var/www/GMRTDataArchive
 #RUN rm /home/eXtplorer_2.1.9.zip
 
 #########################################
